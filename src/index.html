@@ -6,9 +6,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Validador de Tarjeta</h1>
+    <main class="main-container">
+      <section class="main-container__background--section"> 
+        <div class="card">
+          <p class="card_number">0000 0000 0000 0000</p>
+        </div>
+      </section>
+      <section>
+        <form >
+          <label for="card_number">Número de tarjeta</label>
+          <input type="text" name="cardNumber" id="cardNumber" class="form_input" maxlength="19" placeholder="ej.XXXX XXXX XXXX XXXX">
+          <div class="form_cardNumber-error error"></div><br>
+          <button onclick="validatorCard()">Validar</button>
+        </form>
+  
+      </section>
+    </main>
     <header></header>
-    <main></main>
+   
     <footer></footer>
-    <script src="index.js" type="module"></script>
+    <script src="index.js" ></script>
   </body>
 </html>
