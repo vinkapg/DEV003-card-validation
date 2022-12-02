@@ -1,0 +1,30 @@
+/*Agregar fondo de color*/
+body {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+   
+}
+/*Agregar caja blanca con los items dentro/ se agrega margen internos y externos al form*/
+.margen {
+    background-color: white;
+    margin: 150px 500px 250px 500px;
+    padding: 50px 50px 50px 50px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: inset;
+}
+/*Cambiar fuente de texto y centrarlo*/
+.text {
+    text-align: center; /*este centra el texto pero no esta funcionando, investigar*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Centrar el botón "validar"*/
+#botón {
+    background-color: #66a6ff;
+    cursor: pointer; /*agrega manito cuando se posiciona sobre el botón*/
+    border-color: #66a6ff;
+    border-radius: 5px;    
+}
+#botón:hover {
+    background-color: white;
+    border-color: #66a6ff;
+}
