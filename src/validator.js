@@ -11,6 +11,4 @@ function validatorCard(){
       
       arregloTarjeta = parseInt(CardNumber[j]);
       console.log(arregloTarjeta)
-  }
-
-  
+  }}
