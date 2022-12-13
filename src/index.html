@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    
-    <main class="main-container" id="fondo-tarjeta">
-     
-      <section class="main-container__background-section"> 
-        <div class="card">
-        
-          <p class="card_number">0000 0000 0000 0000</p>
-          <div class="card_details">
-            <p class="card_details_name">Nombre Apellido</p>
-            <p><span class="card_month">00</span>/ <span class="card_year">00</span></p>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main class="main-container" id="fondo-tarjeta">
+
+    <section class="main-container__background-section">
+      <div class="card">
+
+        <p class="card_number">0000 0000 0000 0000</p>
+        <div class="card_details">
+          <p class="card_details_name">Francisco Urra</p>
+          <p><span class="card_month">00</span>/ <span class="card_year">00</span></p>
+        </div>
+      </div>
+      <div class="card_back">
+        <p class="card_back_cvc">000</p>
+      </div>
+    </section>
+    <section class="main-container__form_section">
+      <form class="form">
+        <label class="formLabel" for="cardName">Nombre y apellido impreso en la tarjeta</label>
+        <input type="text" class="formInput" id="cardName" name="cardName" placeholder="ej. Francisco Urra">
+        <div class="formInput_cardName_error error"></div><br>
+
+        <label class="formLabel" for="cardNumber">Número de la tarjeta</label>
+        <input type="text" class="formInput" id="cardNumber" name="cardNumber" maxlength="16"
+          placeholder="ej. XXXX XXXX XXXX XXXX">
+        <div class="formInput_cardNumber_error error"></div><br>
+        <div class="form_dateCvc">
+          <!-- 1 -->
+          <div class="formLabel_monthYear">
+            <label class="formLabel" for="cardMonth">Mes de expiración</label>
+            <label class="formLabel" for="cardYear">Año de expiración</label>
           </div>
-        </div>
-        <div class="card_back">
-          <p class="card_back_cvc">000</p>
-        </div>
-      </section>
-      <section class="main-container__form_section">
-        <form class="form">
-          <label for="cardName">Nombre y apellido impreso en la tarjeta</label>
-          <input type="text" class="formInput" id="cardName" name="cardName" placeholder="ej. Francisco Urra">
-          <div class="formInput_cardName_error error"></div><br>
-
-          <label for="cardNumber">Número de la tarjeta</label>
-          <input type="text" class="formInput" id="cardNumber" name="cardNumber" maxlength="19" placeholder="ej. XXXX XXXX XXXX XXXX">
-          <div class="formInput_cardNumber_error error"></div><br>
+          <!-- 2 -->
+          <label class="formLabel" for="cardCVC">CVC</label>
+          <!-- 3 -->
+          <div class="formInput_monthYear">
+            <input type="text" class="formInput" id="cardMonth" name="cardMonth" placeholder="MM" maxlength="2">
+            <input type="text" class="formInput" id="cardYear" name="cardYear" placeholder="AA" maxlength="2">
+          </div>
+          <!-- 4 -->
+          <input type="text" class="formInput" id="cardCVC" name="cardCVC" placeholder="CVC" maxlength="3">
+          <!-- 5 formInput_mm_error va a servir para el error en js y "error" que esta al final es para css-->
           <div>
-            <!-- 1 -->
-            <div>
-              <label for="cardMonth">Mes de expiración</label>
-              <label for="cardYear">Año de expiración</label>
-            </div>
-            <!-- 2 -->
-            <label for="cardCVC">CVC</label>
-            <!-- 3 -->
-            <div>
-              <input type="text" class="formInput" id="cardMonth" name="cardMonth" placeholder="MM" maxlength="2">
-              <input type="text" class="formInput" id="cardYear" name="cardYear" placeholder="AA" maxlength="2">
-            </div>
-            <!-- 4 -->
-            <input type="text" class="formInput" id="cardCVC" name="cardCVC" placeholder="CVC" maxlength="3">
-            <!-- 5 formInput_mm_error va a servir para el error en js y "error" que esta al final es para css-->
-            <div>
-              <div class="formInput_mm_error error"></div>
-              <div class="formInput_aa_error error"></div>
-            </div>
-            <!-- 6 -->
-            <div class="formInput_cvc_error error"></div>
-          </div><br><br>
-          <!-- ¿que es mejor?, agregar un button o un input con type submit -->
-          <button onclick="ValidatorCard()" class="formButton" id="botón">Validar</button>       
+            <div class="formInput_mm_error error"></div>
+            <div class="formInput_aa_error error"></div>
+          </div>
+          <!-- 6 -->
+          <div class="formInput_cvc_error error"></div>
+        </div><br><br>
+        <!-- ¿que es mejor?, agregar un button o un input con type submit -->
+        <button class="formButton" id="boton">Validar</button>
 
-        </form>
+      </form>
 
-  
-      </section>
-    </main>
-    <header></header>
-   
-    <footer></footer>
-    <script src="index.js" ></script>
-  </body>
+
+    </section>
+  </main>
+  <header></header>
+
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

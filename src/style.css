@@ -2,13 +2,13 @@
 
 
 .main-container {
-    border: 1px solid red;
+    /* border: 1px solid red; ---> ayuda visual */
     width: 375px;
     margin: auto;
 }
 
 .main-container__background-section{
-    background-image: url("../fondo_dorado.jpg");
+    background-image: url("../fondo_oro_transparencia.jpg");
     background-repeat: no-repeat;
     height: 300px;
     position: relative;
@@ -30,8 +30,8 @@
 .card {
     border: 1px solid white;
     border-radius: 15px;
-    width: 288px;
-    height: 160px;
+    width: 248px;
+    height: 120px;
     color: white;
     padding: 20px;
     background-image: url("../fondo_negro_card.png");
@@ -56,8 +56,8 @@
 .card_back {
     border: 1px solid white;
     border-radius: 15px;
-    width: 288px;
-    height: 160px;
+    width: 248px;
+    height: 120px;
     color: white;
     padding: 20px;
     background-image: url("../fondo_negro_card_back.jpg");
@@ -65,11 +65,11 @@
     position: absolute;
     top: 30px;
     left: 75px;
-    letter-spacing: 2px;
+    letter-spacing: 2px; /*le da espacios a los números de la tarjeta*/
 }
 .card_back_cvc{
     font-size: 0.8em;
-    margin-top: 52px;
+    margin-top: 44px;
     text-align: right;
     padding-right: 55px;
 }
@@ -89,24 +89,77 @@
     }
 }
 .card_number{
-    margin-bottom: 40px;
-    padding-top: 65px;
+    margin-bottom: 20px; /*distancia entre números, nombreapellido y fecha*/
+    padding-top: 35px; /*margen superior de la tarjeta y los números*/
 
 }
 .card_details{
     display: flex;
-    font-size: 0.6em;
-    justify-content: space-between;
-    text-transform: uppercase;
+    font-size: 0.6em; /*da el tamaño de la letra*/
+    justify-content: space-between; /*da distancia entre nombreapellido y fecha*/
+    text-transform: uppercase; /*transforma el texto a mayuscula*/
 }
 @media (min-width: 1440px){
     .card_number{
-        font-size: 1.6em;
-        margin-bottom: 25px;
+        font-size: 1.6em; /*da el tamaño de la letra/numeros*/
+        margin-bottom: 35px; /*distancia entre números, nombreapellido y fecha*/
+        padding-top: 70px; /*margen superior de la tarjeta y los números*/
     }
     .card_details{
         font-size: 0.8em ;
     }
     
     }
+
+
+.formLabel {
+    /* border: 1px solid red; --> aplica como ayuda visual */
+    display: block; /*es para que label ocupe toda la linea*/
+    margin-bottom: 8px;
+}
+.formInput {
+    width: 100%; /*es para que el input */
+    height: 20px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace; /*fuente del texto*/
+    border: 1px solid gray; 
+    padding-left: 10px ;
+    
+}
+.form_dateCvc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 50px;
+}
+
+.formLabel_monthYear{
+    display: flex;
+}
+
+.formInput_monthYear{
+    display: flex;
+    gap: 0 10px; /*espacios entre casillas de MM y AA*/
+}
+#boton {
+    background-color: #efb810;
+    cursor: pointer; /*agrega manito cuando se posiciona sobre el*/
+    border-color: #efb810;
+    border-radius: 10px; /*redondea las esquinas del botón*/   
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+#boton:hover {
+    background-color: white;
+    border-color: #efb810;
+}
+
+@media (min-width:1440px){
+    .form{
+        width: 385px;
+        margin-top: 180px;
+        padding-left: 150px; 
     }
+}
