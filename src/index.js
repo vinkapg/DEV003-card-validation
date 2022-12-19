@@ -16,6 +16,7 @@ asociarInput1.addEventListener("input", () => {
 //Número de la tarjeta
 const numeroTarjeta = document.querySelector(".card_number");
 const asociarInput2 = document.querySelector("#cardNumber");
+
 /*const errorDiv2 = document.querySelector(".formInput_cardNumber_error");*/
 
 asociarInput2.addEventListener("input", () => {
@@ -76,21 +77,26 @@ asociarInput5.addEventListener("input", () => {
 // if(Number.isInteger(datoValidar)) {
 //   console.log('La variable es entera');
 // }
-document.getElementById("botonValidar").addEventListener("click", numberToValidation());
+document.getElementById("botonValidar").addEventListener("click", numberToValidation);
 
-function numberToValidation() {
-
+function numberToValidation(event) {
+  event.preventDefault(); //prohibe que se recargue la pagina para que se ejecute la fx
   const numRegistro = document.getElementById("cardNumber").value;
-  if (numRegistro.lenght === 16) {
+  const numeroMichis = validator.maskify(numRegistro);
+  document.getElementById("cardNumber").value = numeroMichis
+  if (numRegistro.length <= 16) {
     const valido = validator.isValid(numRegistro);  
+    if(valido===true){
+      document.getElementById("cambioTarjetaValida").style.display = "block";
+      document.querySelector(".main-container__form_section").style.display = "none";
+    }
     if(valido===false){
-      console.log(valido);
-    }if(valido===true){
-      console.log(valido);
+      document.getElementById("cambioTarjetaInvalida").style.display = "block";
+      document.querySelector(".main-container__form_section").style.display = "none";
     }
   }
 
-};
+}
 
 
 
