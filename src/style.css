@@ -141,7 +141,7 @@
     display: flex;
     gap: 0 10px; /*espacios entre casillas de MM y AA*/
 }
-#boton {
+#botonValidar {
     background-color: #efb810;
     cursor: pointer; /*agrega manito cuando se posiciona sobre el*/
     border-color: #efb810;
@@ -151,7 +151,7 @@
     margin: 0 auto;
     letter-spacing: 1px;
 }
-#boton:hover {
+#botonValidar:hover {
     background-color: white;
     border-color: #efb810;
 }
