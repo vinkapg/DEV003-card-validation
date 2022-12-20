@@ -1,3 +1,17 @@
+Para poder lograr estre proyecto realice un prototipo básico de lo que quería lograr en él. Este prototipo lo realice en la plataforma canva y de ahí tambien saque imagenes para la página final, cree el fondo de la tarjeta por ambos lados y saque los iconos de las alertas, adjunto imagenes:
+![image](https://user-images.githubusercontent.com/119441017/208770987-51882cb0-5901-4a66-b78a-268f0178f95d.png)
+![image](https://user-images.githubusercontent.com/119441017/208771024-8d1ca3f4-eecd-4267-82ca-ab1e5e88a6c3.png)
+![image](https://user-images.githubusercontent.com/119441017/208771057-b737f8ed-3043-4025-a9a2-1e02b39f42c8.png)
+![image](https://user-images.githubusercontent.com/119441017/208771095-65cef04d-06b1-41b9-9a29-63cdd6d299fc.png)
+![image](https://user-images.githubusercontent.com/119441017/208771140-f4621842-4387-4a79-a058-8c1f3689e004.png)
+![image](https://user-images.githubusercontent.com/119441017/208771179-30a54e27-6929-4803-9b07-4f300237fd27.png)
+![image](https://user-images.githubusercontent.com/119441017/208771216-4f152118-7304-4986-98ee-f55c12e06ab2.png)
+![image](https://user-images.githubusercontent.com/119441017/208771266-bae3375d-a7b0-4a7c-a073-6bbd44cb0ab5.png)
+![image](https://user-images.githubusercontent.com/119441017/208771350-20a12cfc-bc45-43d8-be4a-8569e4db2ab3.png)
+Tambien intente llevar una organización mediante Trello, si bien olvidaba revisarlo diariamente, logré organizar los pasos que debía lograr para cumplir con mi prototipo.
+El proyecto final quedo con más información y funcionalidades de las solicitadas pero con la funcionalidad principal más que lograda.
+
+
 # Tarjeta de crédito válida
 
 ## Índice
