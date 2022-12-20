@@ -10,7 +10,7 @@ Para poder lograr estre proyecto realice un prototipo básico de lo que quería 
 ![image](https://user-images.githubusercontent.com/119441017/208771350-20a12cfc-bc45-43d8-be4a-8569e4db2ab3.png)
 Tambien intente llevar una organización mediante Trello, si bien olvidaba revisarlo diariamente, logré organizar los pasos que debía lograr para cumplir con mi prototipo.
 El proyecto final quedo con más información y funcionalidades de las solicitadas pero con la funcionalidad principal más que lograda.
-
+https://vinkapg.github.io/DEV003-card-validation/src/
 
 # Tarjeta de crédito válida
 
