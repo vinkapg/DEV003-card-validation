@@ -16,7 +16,8 @@ asociarInput1.addEventListener("input", () => {
 //Número de la tarjeta
 const numeroTarjeta = document.querySelector(".card_number");
 const asociarInput2 = document.querySelector("#cardNumber");
-
+// const numeroMichis = validator.maskify(asociarInput2.value);
+//   document.getElementById("cardNumber").value = numeroMichis
 /*const errorDiv2 = document.querySelector(".formInput_cardNumber_error");*/
 
 asociarInput2.addEventListener("input", () => {
@@ -26,6 +27,7 @@ asociarInput2.addEventListener("input", () => {
     numeroTarjeta.innerText = asociarInput2.value;
   }
 });
+
 
 //Mes de expiración
 const boxMonth = document.querySelector(".card_month");
@@ -77,6 +79,14 @@ asociarInput5.addEventListener("input", () => {
 // if(Number.isInteger(datoValidar)) {
 //   console.log('La variable es entera');
 // }
+// document.getElementById("cardNumber").keyBoardEvent("keyup", mascaraNum);
+
+// function mascaraNum(){
+//   const numRegistro1 = document.getElementById("cardNumber").value;
+//   const numeroMichis = validator.maskify(numRegistro1);
+//   document.getElementById("cardNumber").value = numeroMichis
+// }
+
 document.getElementById("botonValidar").addEventListener("click", numberToValidation);
 
 function numberToValidation(event) {
@@ -84,15 +94,18 @@ function numberToValidation(event) {
   const numRegistro = document.getElementById("cardNumber").value;
   const numeroMichis = validator.maskify(numRegistro);
   document.getElementById("cardNumber").value = numeroMichis
+
   if (numRegistro.length <= 16) {
     const valido = validator.isValid(numRegistro);  
     if(valido===true){
       document.getElementById("cambioTarjetaValida").style.display = "block";
       document.querySelector(".main-container__form_section").style.display = "none";
+      document.getElementById("numTarjeta").innerHTML = numeroMichis;
     }
     if(valido===false){
       document.getElementById("cambioTarjetaInvalida").style.display = "block";
       document.querySelector(".main-container__form_section").style.display = "none";
+      document.getElementById("numTarjetaInc").innerHTML = numeroMichis;
     }
   }
 

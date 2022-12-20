@@ -59,7 +59,7 @@ const validator = {
     //aún cuando el string sea de menor longitud.
     // numberCardMask = numberCardMask.toString()
     const ultimosCuatro = numeroTarjeta.substring(numeroTarjeta.length - 4); 
-    const primerosNum = numeroTarjeta.substring(0, numeroTarjeta.length - 4);  // decía "error  'resultado' is not defined" antes de poner const
+    const primerosNum = numeroTarjeta.substring(0, numeroTarjeta.length - 4);  
     const ocultar = primerosNum.replace(/./g,"#") + ultimosCuatro;
     return ocultar
   //   for (let i = 0; i < numberCardMask.length; i++)

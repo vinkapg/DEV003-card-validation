@@ -164,8 +164,8 @@
     }
 }
 .alertas{
-    padding-left: 270px;
-    padding-top: 250px;
+    padding-left: 5px;
+    padding-top: 60px;
 }
 
 #cambioTarjetaValida{
@@ -185,4 +185,18 @@
 }
 .imagenInvalida{
     width: 200px;
+}
+@media (min-width:1440px){
+    .alertas{
+        padding-left: 280px;
+        padding-top: 250px;
+    }
+    .imagenInvalida{
+        width: 210px;
+        
+    }
+    .imagenValida{
+        width: 210px;
+
+    }
 }
